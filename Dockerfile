@@ -11,4 +11,3 @@ CMD echo "[{rabbit, [{loopback_users, []}]}]." >> /etc/rabbitmq/rabbitmq.config
 
 EXPOSE 5672
 
-CMD ["rabbitmqctl", "start"]
