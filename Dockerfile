@@ -9,5 +9,7 @@ RUN apt-get update && apt-get install -y rabbitmq-server
 
 CMD echo "[{rabbit, [{loopback_users, []}]}]." >> /etc/rabbitmq/rabbitmq.config
 
+CMD service rabbitmq-server restart
+
 EXPOSE 5672
 
